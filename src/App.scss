@@ -106,12 +106,12 @@
   padding: 1rem;
 
   div {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: var(--white-color);
-    margin: 0.50rem 0;
-    border: 1px solid var(--gray-color);
+    margin: 0.35rem 0;
+    border: 1px solid var(--secondary-color);
 
     display: flex;
     justify-content: center;
@@ -122,7 +122,7 @@
     svg {
       width: 15px;
       height: 15px;
-      color: var(--gray-color);
+      color: var(--secondary-color);
     }
 
     &:hover {

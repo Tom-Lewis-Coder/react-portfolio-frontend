@@ -18,13 +18,12 @@
     align-items: center;
 
     img {
-        width: 55px;
-        height: 40px;
-        border-radius: 15%;
+        width: 100px;
+        height: 22px;
 
         @media screen and (min-width: 2000px) {
-            width: 100px;
-            height: 80px;
+            width: 180px;
+            height: 40px;
         }
     }
 }
@@ -35,6 +34,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
+    margin-right: 4.75rem;
 
     li {
         margin: 0 1rem;
@@ -52,7 +52,7 @@
         }
 
         a {
-            color: var(--gray-color);
+            color: var(--secondary-color);
             text-decoration: none;
             flex-direction: column;
 
@@ -60,10 +60,6 @@
             font-weight: 500;
 
             transition: all 0.3s ease-in-out;
-
-            &:hover {
-                color: var(--secondary-color);
-            }
         }
 
         &:hover {

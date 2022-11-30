@@ -1,4 +1,5 @@
 import email from '../assets/email.png';
+import email1 from '../assets/email1.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
@@ -39,6 +40,7 @@ import spotify from '../assets/spotify.png';
 
 const images = {
   email,
+  email1,
   mobile,
   api,
   cpp,

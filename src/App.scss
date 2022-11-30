@@ -47,7 +47,7 @@
 
   p {
     text-transform: uppercase;
-    color: var(--black-color);
+    color: var(--secondary-color);
   }
 }
 
@@ -106,12 +106,12 @@
   padding: 1rem;
 
   div {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: var(--white-color);
-    margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
+    margin: 0.50rem 0;
+    border: 1px solid var(--gray-color);
 
     display: flex;
     justify-content: center;

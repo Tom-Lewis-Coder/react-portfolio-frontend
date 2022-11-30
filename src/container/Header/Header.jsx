@@ -26,8 +26,7 @@ const Header = () => {
       >
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
-            <span>👋</span>
-            <div style={{ marginLeft: 20 }} >
+            <div>
               <p className='p-text'>Hi, I'm</p>
               <h1 className='head-text'>Tom</h1>
             </div>

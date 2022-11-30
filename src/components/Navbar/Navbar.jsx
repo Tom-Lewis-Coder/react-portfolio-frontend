@@ -10,9 +10,6 @@ const Navbar = () => {
 
   return (
     <nav className='app__navbar'>
-        <div className='app__navbar-logo'> 
-            <img src={images.tsllogo} alt='logo' ></img>
-        </div>
         <ul className='app__navbar-links'> 
             {['home', 'about', 'work', 'skills', 'contact'].map(item => (
                 <li className='app__flex p-text' key={`link-${item}`} >
@@ -40,6 +37,9 @@ const Navbar = () => {
                     </ul>
                 </motion.div>
             )}
+        </div>
+        <div className='app__navbar-logo'> 
+            <img src={images.tsllogo} alt='logo' ></img>
         </div>
     </nav>
   )

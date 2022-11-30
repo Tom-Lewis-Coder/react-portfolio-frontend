@@ -14,10 +14,12 @@
 
 .app__navbar-logo {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     border: 0.5px solid var(--secondary-color);
     padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
 
     img {
         width: 100px;
@@ -33,10 +35,10 @@
 .app__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
-    margin-right: 4.75rem;
+    margin-left: 1rem;
 
     li {
         margin: 0 1rem;

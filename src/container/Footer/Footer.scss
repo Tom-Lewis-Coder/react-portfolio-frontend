@@ -103,10 +103,10 @@
       padding: 1rem 2rem;
       border-radius: 10px;
       border: none;
-      background-color: var(--primary-color);
+      background-color: var(--secondary-color);
   
       font-weight: 500;
-      color: var(--secondary-color);
+      color: var(--primary-color);
       outline: none;
       margin: 2rem 0 0 0;
       font-family: var(--font-base);
@@ -115,8 +115,8 @@
       cursor: pointer;
   
       &:hover {
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
       }
     }
   

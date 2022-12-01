@@ -61,7 +61,6 @@
 
   .badge-cmp,
   .tag-cmp {
-    padding: 1rem 2rem;
     background: var(--white-color);
     border-radius: 10px;
     flex-direction: row;
@@ -71,20 +70,26 @@
   }
 
   .badge-cmp {
+    padding: 1rem 2rem;
+    p {
+      font-weight: 500;
+    }
     p, h1 {
-    color: var(--secondary-color);
+      color: var(--secondary-color);
     }
   }
 
   .tag-cmp {
+    padding: 0.3rem 0.5rem;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     p {
       width: 100%;
       text-transform: uppercase;
       text-align: right;
       color: var(--secondary-color);
+      font-weight: 650;
     }
   }
 
@@ -183,10 +188,10 @@
     position: relative;
 
     img {
-        width: 60%;
+        margin-top: 3rem;
+        width: 75%;
         object-fit: contain;
         z-index: 1;
-        
     }
 
     .overlay__circle {

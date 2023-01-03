@@ -19,9 +19,9 @@ const About = () => {
   return (
     <>
       <h2 className='head-text'>
-        I am <span>passionate</span> about,
+        I am a web devloper <span>specialising</span>
         <br />
-        But not limited to <span>Front End development</span>
+        in building <span>exeptional and accessible</span> web applications with JavaScript/React.
       </h2>
 
       <div className='app__profiles' >

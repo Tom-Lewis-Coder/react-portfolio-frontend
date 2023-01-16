@@ -94,6 +94,7 @@
         width: 70%;
         height: 70%;
         color: var(--white-color);
+        cursor: pointer;
 
         &:hover{
             color: var(--gray-color);
@@ -129,6 +130,7 @@
             height: 35px;
             color: var(--secondary-color);
             margin: 0.5rem 1rem;
+            cursor: pointer;
         }
 
         ul {

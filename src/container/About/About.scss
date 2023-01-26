@@ -13,12 +13,16 @@
 } 
 
 .app__profile-item {
-    width: 190px;
+    width: 265px;
+    height: 375px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     margin: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px var(--secondary-color);
 
     img {
         width: 100%;

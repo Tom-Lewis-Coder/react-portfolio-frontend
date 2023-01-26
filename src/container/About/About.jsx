@@ -19,9 +19,7 @@ const About = () => {
   return (
     <>
       <h2 className='head-text'>
-        I am a web devloper <span>specialising</span>
-        <br />
-        in building <span>exeptional and accessible</span> web applications with JavaScript/React.
+        I specialise in building <span>exeptional and accessible</span> web applications with JavaScript/React.
       </h2>
 
       <div className='app__profiles' >

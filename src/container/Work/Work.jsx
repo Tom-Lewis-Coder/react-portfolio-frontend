@@ -61,7 +61,12 @@ const Work = () => {
         className='app__work-portfolio'
       >
         {filterWork.map((work, index) => (
-          <div className='app__work-item app__flex' key={index}>
+          <motion.div 
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.2, ease: 'easeInOut'}}
+            className='app__work-item app__flex' 
+            key={index}
+          >
             <div className='app__work-img app__flex'>
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
@@ -72,9 +77,9 @@ const Work = () => {
               >
                 <a href={work.projectLink} target='_blank' rel='noreferrer'>
                   <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [0, 0.9] }}
-                    transition={{ duration: 0.25 }}
+                    whileInView={{ scale: 1 }}
+                    whileHover={{ scale: 0.9 }}
+                    transition={{ duration: 0.15 }}
                     className='app__flex'
                   >
                     <AiFillEye />
@@ -82,9 +87,9 @@ const Work = () => {
                 </a>
                 <a href={work.codeLink} target='_blank' rel='noreferrer'>
                   <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [0, 0.9] }}
-                    transition={{ duration: 0.25 }}
+                    whileInView={{ scale: 1 }}
+                    whileHover={{ scale: 0.9 }}
+                    transition={{ duration: 0.15 }}
                     className='app__flex'
                   >
                     <AiFillGithub />
@@ -100,7 +105,7 @@ const Work = () => {
                 <p className='p-text'>{work.tags[0]}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </>

@@ -23,6 +23,9 @@
       cursor: pointer;
       transition: all 0.3s ease;
       margin: 0.5rem;
+
+      box-shadow: 0 1.5px 3px var(--secondary-color);
+      border-radius: 7px;
   
       &:hover {
         background-color: var(--secondary-color);
@@ -59,10 +62,12 @@
   
       cursor: pointer;
       transition: all 0.3s ease;
+
+      box-shadow: 0 3px 6px var(--secondary-color);
   
-      &:hover {
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-      }
+      // &:hover {
+      //   box-shadow: 0 10px 20px var(--secondary-color);
+      // }
   
       @media screen and (min-width: 2000px) {
         width: 470px;

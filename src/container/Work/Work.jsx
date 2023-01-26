@@ -8,10 +8,10 @@ import './Work.scss'
 
 const Work = () => {
 
-  const [ activeFilter, setActiveFilter ] = useState('All')
-  const [ animateCard, setAnimateCard ] = useState({ y: 0, opacity: 1 })
-  const [ works, setWorks ] = useState([])
-  const [ filterWork, setFilterWork ] = useState([])
+  const [activeFilter, setActiveFilter] = useState('All')
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 })
+  const [works, setWorks] = useState([])
+  const [filterWork, setFilterWork] = useState([])
 
   useEffect(() => {
     const query = '*[_type == "works"]'
@@ -28,7 +28,7 @@ const Work = () => {
     setActiveFilter(item)
     setAnimateCard([{ y: 100, opacity: 0 }])
 
-     setTimeout(() => {
+    setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === 'All') {
@@ -45,26 +45,28 @@ const Work = () => {
 
       <div className='app__work-filter'>
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
-        <div 
-          key={index}
-          onClick={() => handleWorkFilter(item)}
-          className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : '' }`}
-        >
-          {item}
-        </div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
+          >
+            {item}
+          </motion.div>
         ))}
       </div>
 
-      <motion.div 
+      <motion.div
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app__work-portfolio'
       >
         {filterWork.map((work, index) => (
-          <motion.div 
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.2, ease: 'easeInOut'}}
-            className='app__work-item app__flex' 
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2, ease: 'easeInOut' }}
+            className='app__work-item app__flex'
             key={index}
           >
             <div className='app__work-img app__flex'>
@@ -95,7 +97,7 @@ const Work = () => {
                     <AiFillGithub />
                   </motion.div>
                 </a>
-              </motion.div>  
+              </motion.div>
             </div>
             <div className='app__work-content app__flex'>
               <h4 className='bold-text'>{work.title}</h4>

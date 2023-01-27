@@ -1,131 +1,129 @@
 .app__footer {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-  
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-    }
-  }
-  
-  .app__footer-cards {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 4em 2rem 2rem;
-  
-    .app__footer-card {
-      min-width: 290px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-  
-      margin: 1rem 0;
-      padding: 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      background-color: var(--lightGray-color);
-  
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 1px 2px var(--gray-color);
-  
-      img {
-        width: 40px;
-        height: 40px;
-        margin: 0 0.7rem;
-      }
-  
-      p {
-        font-weight: 500;
-      }
-      a {
-        text-decoration: none;
-        font-weight: 500;
-      }
-      &:hover {
-        box-shadow: 0 2px 4px var(--gray-color);
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
 
-      }
-  
-      @media screen and (max-width: 450px) {
-        width: 100%;
-      }
-    }
-  
-    @media screen and (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  
-  .app__footer-cards .app__footer-card img:last-child {
-    border-radius: 50%;
-  }
-  
-  .app__footer-form {
-    width: 60%;
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin: 1rem 2rem;
-  
-    div {
-      width: 100%;
-  
-      margin: 0.75rem 0;
-      border-radius: 10px;
-      cursor: pointer;
-      background-color: var(--lightGray-color);
-  
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 1px 2px var(--gray-color);
-  
-      input,
-      textarea {
-        width: 100%;
-        padding: 0.95rem;
-        border: none;
-        border-radius: 7px;
-        background-color: var(--lightGray-color);
-  
-        font-family: var(--font-base);
-        color: var(--black-color);
-        outline: none;
-      }
-  
-      textarea {
-        height: 170px;
-      }
-  
-      &:hover {
-        box-shadow: 0 2px 4px var(--gray-color);
-      }
+  }
+}
+
+.app__footer-cards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4em 2rem 2rem;
+
+  .app__footer-card {
+    min-width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--lightGray-color);
+
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 2px var(--gray-color);
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 0.7rem;
     }
-  
-    button {
-      padding: 1rem 2rem;
-      border-radius: 10px;
+
+    .p-text {
+      font-size: 0.9rem;
+      font-weight: 900;
+    }
+
+  &:hover {
+    box-shadow: 0 2px 4px var(--gray-color);
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  width: 100%;
+}
+}
+
+.app__footer-cards .app__footer-card img:last-child {
+  border-radius: 50%;
+}
+
+.app__footer-form {
+  width: 60%;
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  div {
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--lightGray-color);
+
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 2px var(--gray-color);
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
       border: none;
-      background-color: var(--secondary-color);
-  
-      font-weight: 500;
-      color: var(--primary-color);
-      outline: none;
-      margin: 2rem 0 0 0;
+      border-radius: 0.25rem;
+      background-color: var(--lightGray-color);
+
       font-family: var(--font-base);
-  
-      transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-      cursor: pointer;
-      box-shadow: 0 3px 6px var(--secondary-color);
-  
-      &:hover {
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-      }
+      color: var(--black-color);
+      outline: none;
     }
-  
-    @media screen and (max-width: 768px) {
-      width: 100%;
-      margin: 1rem 0;
+
+    textarea {
+      height: 170px;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px var(--gray-color);
     }
   }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--secondary-color);
+
+    font-weight: 500;
+    color: var(--primary-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+    box-shadow: 0 3px 6px var(--secondary-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

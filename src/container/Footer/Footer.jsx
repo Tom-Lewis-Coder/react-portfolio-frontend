@@ -40,14 +40,14 @@ const Footer = () => {
       <h2 className='head-text'>I would love to hear from you</h2>
 
       <div className='app__footer-cards'>
-        <div className='app__footer-card'>
+        <a className='app__footer-card' href='mailto:tomlewis139@gmail.com' >
           <img src={images.email} alt='email' />
-          <a href='mailto:tomlewis139@gmail.com' className='p-text'>tomlewis139@gmail.com</a>
-        </div>
-        <div className='app__footer-card'>
-          <img src={images.mobile} alt='mobile' />
-          <a href='tel:07376 265677' className='p-text'>07376 265677</a>
-        </div>
+          <div className='p-text'>tomlewis139@gmail.com</div>
+        </a>
+        <a className='app__footer-card'  href='tel:07376 265677' >
+          <img src={images.mobile} alt='mobile'/>
+          <div className='p-text'>07376 265677</div>
+        </a>
       </div>
 
       {!isFormSubmitted ? 

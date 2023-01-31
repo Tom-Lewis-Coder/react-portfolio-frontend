@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 
 import { AppWrap, MotionWrap } from '../../wrapper'
@@ -44,7 +44,7 @@ const Testimonial = () => {
               </p>
               <div>
                 <h4 className='bold-text'>{testimonials[currentIndex].name}</h4>
-                <h5 className='p-text'>{testimonials[currentIndex].comapny}</h5>
+                <h5 className='p-text'>{testimonials[currentIndex].company}</h5>
               </div>
             </div>
           </div>

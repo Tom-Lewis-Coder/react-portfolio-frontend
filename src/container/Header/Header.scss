@@ -2,6 +2,7 @@
   background-image: url('../../assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
   // disable the default padding styles
   .app__wrapper {
     padding: 0;
@@ -28,7 +29,7 @@
     flex-direction: column;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     padding: 6rem 1rem 2rem;
   }
 }
@@ -68,7 +69,7 @@
     padding: 1rem 1rem;
 
     p {
-      font-weight: 650;
+      font-weight: 600;
       font-size: large;
     }
 
@@ -81,11 +82,21 @@
       height: 120px;
       width: 120px;
       box-shadow: 0px 1.5px 5px var(--secondary-color);
-  }    
 
-    @media screen and (max-width: 450px) {
+      h1 {
+        font-size: 2.25rem;
+      }
+
+    }
+
+    @media screen and (max-width: 550px) {
       height: 100px;
       width: 100px;
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
     }
   }
 
@@ -109,13 +120,20 @@
       text-align: right;
       color: var(--secondary-color);
       font-weight: 650;
-      font-size: large;
+      font-size: medium;
     }
 
     @media screen and (max-width: 800px) {
-        box-shadow: 0px 1.5px 5px var(--secondary-color);
-        margin-top: 1rem;
+      box-shadow: 0px 1.5px 5px var(--secondary-color);
+      margin-top: 1rem;
     }
+
+    @media screen and (max-width: 550px) {
+      p {
+        font-size: small;
+      }
+    }
+    
   }
 
   span {

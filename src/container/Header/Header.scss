@@ -193,8 +193,8 @@
   }
 
   div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
 
   @media screen and (min-width: 2000px) {
@@ -269,7 +269,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    margin: 0;
+    margin: 0 0 0 1.5rem;
     width: 45%;
   }
 
@@ -277,5 +277,9 @@
     img {
       width: 100%;
     }
+  }
+
+  @media screen and (max-width: 475px) {
+    margin: 0;
   }
 }

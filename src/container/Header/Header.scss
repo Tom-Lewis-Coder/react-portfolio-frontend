@@ -1,5 +1,6 @@
 #home {
-  background-image: url('../../assets/background.jpg');
+  background-image: linear-gradient(to bottom right, #5becbc 20%, #A1FFCE 40%, #c7fff5 60%);
+  // background-image: url('../../assets/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -133,7 +134,7 @@
         font-size: small;
       }
     }
-    
+
   }
 
   span {

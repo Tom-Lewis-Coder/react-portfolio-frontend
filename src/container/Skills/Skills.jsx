@@ -51,6 +51,7 @@ const Skills = () => {
             <motion.div 
               key={experience.year}
               className='app__skills-exp-item'
+              whileHover={{ scale: 1.05 }}
             >
               <div className='app__skills-exp-year'>
                 <p className='bold-text'>{experience.year}</p>

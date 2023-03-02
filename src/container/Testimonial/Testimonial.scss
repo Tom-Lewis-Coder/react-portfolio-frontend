@@ -47,7 +47,7 @@
   .app__testimonial-content {
     flex: 1;
     height: 100%;
-    padding: 2rem;
+   
     text-align: left;
     border-radius: 0.35rem;
   
@@ -55,6 +55,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    margin: 1rem;
+   
 
   
     p {
@@ -62,6 +64,7 @@
       line-height: 2rem;
       color: var(--black-color);
       font-family: var(--font-base);
+      padding: 0.5rem;
   
       @media screen and (min-width: 2000px) {
         font-size: 1.5rem;
@@ -72,7 +75,7 @@
     h4 {
       font-weight: 600;
       color: var(--secondary-color);
-      margin-top: 2rem;
+      padding: 0.5rem;
     }
   
     h5 {
@@ -82,8 +85,6 @@
     }
   
     @media screen and (max-width: 600px) {
-      margin-top: 2rem;
-      padding: 0;
       box-shadow: none;
     }
   }

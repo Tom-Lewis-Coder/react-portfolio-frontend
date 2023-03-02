@@ -28,7 +28,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className='head-text'>Skills and Experience</h2>
+      <h2 className='head-text' id='skills-text'><span>Skills</span> and <span>Experience</span></h2>
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>     
@@ -39,7 +39,7 @@ const Skills = () => {
               transition={{ duration: 0.5 }}
               className='app__skills-item app__flex'
             >
-              <div className='app__flex' style={{ backgroundColor: skill.bgColor }}>
+              <div className='app__flex' style={{ backgroundColor: '#FFFFFF' }}>
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
               <p className='p-text'>{skill.name}</p>
@@ -89,4 +89,4 @@ const Skills = () => {
   )
 }
 
-export default AppWrap(MotionWrap(Skills, 'app__skills'), 'skills', 'app__whitebg')
+export default AppWrap(MotionWrap(Skills, 'app__skills'), 'skills', 'app__secondarybg')

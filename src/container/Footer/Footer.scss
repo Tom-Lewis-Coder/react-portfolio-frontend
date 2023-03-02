@@ -14,7 +14,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
+  margin: 2rem 2rem 2rem;
 
   .app__footer-card {
     min-width: 290px;
@@ -28,7 +28,7 @@
     padding: 1rem;
     border-radius: 0.375rem;
     cursor: pointer;
-    background-color: var(--lightGray-color);
+    background-color: var(--white-color);
 
     transition: all 0.3s ease-in-out;
     box-shadow: 0 1px 2px var(--gray-color);
@@ -55,6 +55,7 @@
 
 @media screen and (max-width: 768px) {
   width: 100%;
+  margin: 1rem 0;
 }
 }
 
@@ -73,7 +74,7 @@
     margin: 0.75rem 0;
     border-radius: 0.375rem;
     cursor: pointer;
-    background-color: var(--lightGray-color);
+    background-color: var(--white-color);
 
     transition: all 0.3s ease-in-out;
     box-shadow: 0 1px 2px var(--gray-color);
@@ -84,7 +85,7 @@
       padding: 0.95rem;
       border: none;
       border-radius: 0.375rem;
-      background-color: var(--lightGray-color);
+      background-color: var(--white-color);
 
       font-family: var(--font-base);
       color: var(--black-color);
@@ -114,10 +115,10 @@
 
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     cursor: pointer;
-    box-shadow: 0 3px 6px var(--secondary-color);
+    border: 2px solid var(--white-color);
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--gray-color);
       color: var(--primary-color);
     }
   }

@@ -49,9 +49,7 @@
       width: 90px;
       height: 90px;
       border-radius: 50%;
-      background-color: #fef4f5;
-      // border: 1px solid lightgray;
-      box-shadow: 0 0.75px 1.5px var(--secondary-color);
+      border: 1px solid lightgray;
   
       img {
         width: 50%;
@@ -74,8 +72,9 @@
     }
   
     p {
-      font-weight: 500;
+      font-weight: 100;
       margin-top: 0.5rem;
+      color: var(--white-color);
     }
   
     @media screen and (min-width: 2000px) {
@@ -121,11 +120,12 @@
   
       h4 {
         font-weight: 500;
+        color: var(--primary-color);
       }
   
       p {
         font-weight: 500;
-        color: var(--gray-color);
+        color: var(--white-color);
         margin-top: 5px;
       }
     }

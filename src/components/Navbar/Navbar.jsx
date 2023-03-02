@@ -13,8 +13,8 @@ const Navbar = () => {
             <ul className='app__navbar-links'>
                 {['home', 'about', 'work', 'skills', 'contact'].map(item => (
                     <motion.li
-                        whileHover={{ scale: 1.25 }}
-                        transition={{ type: 'easeOut' }}
+                        whileHover={{ scale: 1.1 }}
+                        transition={{ duration: 0.1, type: 'easeOut' }}
                         className='app__flex p-text'
                         key={`link-${item}`}
                     >
@@ -36,8 +36,8 @@ const Navbar = () => {
                         <ul className='app__navbar-links'>
                             {['home', 'about', 'work', 'skills', 'contact'].map(item => (
                                 <motion.li
-                                    whileHover={{ scale: 1.25 }}
-                                    transition={{ type: 'easeOut' }}
+                                    whileHover={{ scale: 1.1 }}
+                                    transition={{ duration: 0.1, type: 'easeOut' }}
                                     key={item} >
                                     <a href={`#${item}`} onClick={() => setToggle(false)} >{item}</a>
                                 </motion.li>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 )}
             </div>
             <div className='app__navbar-logo'>
-                <img src={images.tsllogo} alt='logo' ></img>
+                <img src={images.tsllogo} alt='logo' />
             </div>
         </nav>
     )

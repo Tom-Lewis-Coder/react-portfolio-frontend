@@ -40,7 +40,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className='head-text'>My <span>Projects</span></h2>
+      <h2 className='head-text' id='works-text'>My <span>Projects</span></h2>
 
       <div className='app__work-filter'>
         {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
@@ -78,8 +78,8 @@ const Work = () => {
               >
                 <a href={work.projectLink} target='_blank' rel='noreferrer'>
                   <motion.div
-                    whileInView={{ scale: 1 }}
-                    whileHover={{ scale: 0.9 }}
+                    whileInView={{ scale: 0.9 }}
+                    whileHover={{ scale: 1 }}
                     transition={{ duration: 0.15 }}
                     className='app__flex'
                   >
@@ -88,8 +88,8 @@ const Work = () => {
                 </a>
                 <a href={work.codeLink} target='_blank' rel='noreferrer'>
                   <motion.div
-                    whileInView={{ scale: 1 }}
-                    whileHover={{ scale: 0.9 }}
+                    whileInView={{ scale: 0.9 }}
+                    whileHover={{ scale: 1 }}
                     transition={{ duration: 0.15 }}
                     className='app__flex'
                   >

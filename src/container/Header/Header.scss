@@ -69,11 +69,13 @@
 
     box-shadow: 0 3px 10px var(--secondary-color);
 
-    padding: 1rem 1rem;
-
     p {
       font-weight: 600;
       font-size: medium;
+    }
+
+    h1 {
+      font-size: 2.25rem;
     }
 
     p,
@@ -87,7 +89,7 @@
       box-shadow: 0px 1.5px 5px var(--secondary-color);
 
       h1 {
-        font-size: 2.25rem;
+        font-size: 2rem;
       }
 
     }

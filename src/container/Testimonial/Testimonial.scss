@@ -41,6 +41,12 @@
   
     @media screen and (max-width: 600px) {
       flex-direction: column;
+      margin-left: 1rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-left: 0;
+      width: 98%;
     }
   }
   

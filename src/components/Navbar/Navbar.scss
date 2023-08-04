@@ -122,10 +122,7 @@
         align-items: flex-end;
         flex-direction: column;
 
-        background: url('../../assets/bgWhite.png');
-        background-color: var(--white-color);
-        background-size: cover;
-        background-repeat: repeat;
+        background-color: var(--secondary-color);
 
         box-shadow: 0 0 20px rgba(168,168,168, 0.15);
 
@@ -135,6 +132,8 @@
             color: var(--secondary-color);
             margin: 0.5rem 1rem;
             cursor: pointer;
+            background-color: var(--white-color);
+            border-radius: 50%;
         }
 
         ul {
@@ -153,7 +152,7 @@
                 margin: 1rem;
 
                 a {
-                    color: var(--gray-color);
+                    color: var(--white-color);
                     text-decoration: none;
                     font-size: 1rem;
                     text-transform: uppercase;
